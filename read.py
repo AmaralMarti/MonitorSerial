@@ -3,7 +3,8 @@
 from threading import Thread
 import time
 
-class ler_serial(Thread):
+
+class LerSerial(Thread):
     def __init__(self, serial):
         Thread.__init__(self)
 

@@ -4,8 +4,7 @@
 from serial import Serial
 from serial import SerialException
 import serial.tools.list_ports as tools
-from read import ler_serial
-import time
+from read import LerSerial
 
 
 def get_porta():
@@ -93,7 +92,7 @@ if __name__ == "__main__":
 
     show_help(porta, baud)
 
-    ler = ler_serial(serial)
+    ler = LerSerial(serial)
     ler.start()
 
     """
